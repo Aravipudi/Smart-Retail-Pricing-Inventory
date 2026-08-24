@@ -102,10 +102,13 @@ The safety factor scenarios allow the user to compare how different inventory po
 
 ## Dashboard Screenshots
 
-The repository includes screenshots of both Power BI dashboards:
+### Retail Pricing Dashboard
 
-- `retail optimization.png`
-- `Inventory optimization.png`
+![Retail Pricing Dashboard](retail-optimization.png)
+
+### Inventory Optimization Dashboard
+
+![Inventory Optimization Dashboard](inventory-optimization.png)
 
 ## Project Files
 
