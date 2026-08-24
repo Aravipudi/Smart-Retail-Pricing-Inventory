@@ -1,117 +1,130 @@
 # Smart Retail Pricing & Inventory Optimization
 
-Interactive Power BI dashboard designed to analyze retail pricing, sales performance, and inventory optimization opportunities.
+Interactive Power BI dashboard for analyzing retail pricing, sales performance, and inventory optimization.
 
 ## Project Overview
 
-Retail businesses need to balance pricing decisions with inventory levels to maximize revenue while avoiding excess inventory.
+This project uses Power BI to analyze retail sales, pricing, and inventory data and turn it into an interactive business intelligence solution.
 
-This project combines sales, pricing, and inventory data into an interactive Power BI solution that helps identify pricing patterns, evaluate inventory efficiency, and estimate the potential value that can be released through inventory reduction.
+The goal is to help identify pricing patterns, understand sales performance, evaluate excess inventory, and estimate the potential value that can be released through inventory optimization.
 
 ## Business Problem
 
-The objective was to answer key business questions:
+Retail businesses need to balance pricing and inventory levels carefully.
 
-- How does discounting affect revenue performance?
-- How do sales volumes change across different discount levels?
+The project focuses on questions such as:
+
+- How do discounts affect sales performance?
+- How does discounting affect net revenue per record?
 - Which product categories generate the most revenue?
 - How much inventory is currently held?
-- How much inventory could potentially be reduced?
-- How does the selected safety factor affect inventory requirements?
+- How much inventory is above the target level?
+- How does the safety factor affect inventory requirements?
 - What is the potential inventory value that could be released?
 
-## Approach
+## Solution
 
-The project was developed using a combination of data preparation, DAX calculations, and interactive Power BI visualizations.
+The project was divided into two Power BI dashboards.
 
-The analysis was structured into two main areas:
+### Retail Pricing Dashboard
 
-### 1. Retail Pricing Analysis
+The pricing dashboard provides an interactive view of:
 
-The pricing dashboard evaluates:
+- Total Revenue
+- Units Sold
+- Inventory Level
+- Potential Inventory Value Released
+- Average Units Sold by Discount
+- Net Revenue per Record by Discount
+- Price by Category
 
-- Total revenue
-- Units sold
-- Average units sold by discount
-- Net revenue per record by discount
-- Price by category
-- Discount and seasonal patterns
+Users can interact with the dashboard using filters for:
 
-The analysis helps illustrate the relationship between discount levels, sales volume, and revenue performance.
+- Category
+- Region
+- Discount
+- Seasonality
 
-### 2. Inventory Optimization
+### Inventory Optimization Dashboard
 
-The inventory dashboard evaluates:
+The inventory dashboard evaluates inventory requirements under different safety factor scenarios.
 
-- Current inventory
-- Target inventory
-- Excess inventory
-- Inventory reduction percentage
-- Inventory value released
-- Safety factor scenarios
+It includes:
 
-Different safety factor scenarios are compared to understand how inventory requirements and potential inventory release change under different operating assumptions.
+- Current Inventory
+- Target Inventory
+- Excess Inventory
+- Inventory Reduction %
+- Inventory Value Released
+- Safety Factor analysis
+
+The safety factor scenarios allow the user to compare how different inventory policies affect target inventory and potential inventory reduction.
 
 ## Key Metrics
 
-### Pricing Dashboard
+### Retail Pricing
 
-- **Total Revenue:** 550.23M
-- **Units Sold:** 10M
-- **Inventory Level:** 20M
-- **Potential Inventory Value Released:** 356.04M
+| Metric | Value |
+|---|---:|
+| Total Revenue | 550.23M |
+| Units Sold | 10M |
+| Inventory Level | 20M |
+| Potential Inventory Value Released | 356.04M |
 
 ### Inventory Optimization
 
-- **Current Inventory:** 20M
-- **Target Inventory:** 15.51M
-- **Excess Inventory:** 6.42M
-- **Inventory Reduction:** 32.00%
+| Metric | Value |
+|---|---:|
+| Current Inventory | 20M |
+| Target Inventory | 15.51M |
+| Excess Inventory | 6.42M |
+| Inventory Reduction | 32.00% |
 
 ## Key Insights
 
-- Average units sold increase as discounts move from 0% toward the 10% range, before leveling off.
+- Average units sold increase as discounts move toward the 10% range before leveling off.
 - Net revenue per record decreases as discount levels increase.
-- The pricing analysis shows that higher discounts can support sales volume while reducing revenue generated per record.
-- Inventory optimization scenarios show that the selected safety factor materially affects target inventory levels.
-- Lower safety factor scenarios result in lower target inventory and greater potential inventory reduction.
-- The inventory model provides a way to evaluate the trade-off between inventory availability and working capital efficiency.
+- Discounting can increase sales volume while reducing revenue generated per record.
+- Inventory requirements change significantly depending on the selected safety factor.
+- Lower safety factor scenarios result in lower target inventory levels.
+- Inventory optimization can help identify excess inventory and potential working-capital opportunities.
 
 ## Tools & Technologies
 
 - Power BI
 - DAX
-- Microsoft Excel / CSV
 - Data Modeling
 - Data Visualization
+- Microsoft Excel / CSV
 - Business Intelligence
-- Inventory Optimization
 - Pricing Analysis
+- Inventory Optimization
 
 ## Dashboard Screenshots
 
-### Retail Pricing Dashboard
+The repository includes screenshots of both Power BI dashboards:
 
-![Retail Optimization Dashboard](retail%20optimization.png)
-
-### Inventory Optimization Dashboard
-
-![Inventory Optimization Dashboard](Inventory%20optimization.png)
+- `retail optimization.png`
+- `Inventory optimization.png`
 
 ## Project Files
 
 | File | Description |
 |---|---|
-| `Smart Retail Pricing Inventory Model.pbix` | Power BI dashboard and data model |
-| `retail_store_inventory.csv` | Retail inventory dataset |
-| `smart_retail_executive_summary.csv` | Executive-level retail summary data |
-| `smart_retail_inventory_scenarios.csv` | Inventory optimization scenario data |
+| Power BI `.pbix` file | Complete Power BI dashboard and data model |
+| `retail_store_inventory.csv` | Retail inventory data |
+| `smart_retail_executive_summary.csv` | Executive summary data |
+| `smart_retail_inventory_scenarios.csv` | Inventory optimization scenarios |
 | `smart_retail_pricing_analysis.csv` | Pricing analysis data |
 | `retail optimization.png` | Retail pricing dashboard screenshot |
 | `Inventory optimization.png` | Inventory optimization dashboard screenshot |
 
 ## Conclusion
 
-This project demonstrates how Power BI can transform retail pricing, sales, and inventory data into an interactive decision-support tool.
+This project demonstrates how Power BI can transform retail pricing, sales, and inventory data into an interactive decision-support solution.
 
-The solution combines technical analysis with business-focused insights to help decision-makers evaluate pricing strategies, identify excess inventory, and understand the potential financial impact of inventory optimization.
+The dashboard combines technical analysis with business-focused insights to help evaluate pricing strategies, understand inventory requirements, identify excess inventory, and assess potential financial opportunities.
+
+## Repository Contents
+
+This repository contains the Power BI model, supporting datasets, and dashboard screenshots used to develop the solution.
